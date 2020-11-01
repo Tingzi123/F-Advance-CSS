@@ -15,6 +15,11 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -22,75 +27,114 @@ ul {
 }
 
 .header {
-  display: flex;
-  padding: 0 20%;
-  justify-content: space-between;
-  background-color: #3b5998;
+  background-color: black;
   color: white;
 }
 
-.header-left {
+.nav-items{
   display: flex;
-  justify-content: space-between;
-}
-
-.header-left button {
-  align-self: center;
-  border: 0;
-  border-radius: 2px;
-  margin-left: 10px;
-  padding: 4px 10px;
-  background-color: #42b72a;
-  color: white;
-}
-
-.header-right {
-  display: flex;
+  justify-content: space-around;
   align-items: center;
-}
-
-.header-right button,
-.header-right-select {
-  background-color: #3b5998;
-  border: 0px;
-  color: white;
+  padding: 1.5% 0;
 }
 
 .main {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.main-content {
+  border: 1px solid pink;
+  width: 90%;
+  margin: 2% auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 5%;
+}
+
+.aside {
+  border: 1px solid pink;
+  width: 15%;
+}
+
+.aside-items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  word-wrap:break-word; 
+}
+
+.aside-about-me {
+  margin-bottom: 20%;
+  padding: 5% 5% 15% 5%;
+  background-color: rgb(228, 222, 222);
+}
+
+.aside-archives {
+  padding: 0 5% 0 5%;
+}
+
+.aside-items h3{
+  font-style: italic;
+}
+
+.aside-items span{
+  width: 100%;
+}
+
+.sections-column {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  width: 62%;
+}
+
+.sections {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 48%;
 }
 
 .content-section {
+  border: 1px solid gray;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 48%;
   border-radius: 5px;
-  padding-bottom: 2%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  padding-left: 3%;
   background-color: white;
 }
 
 .content-section figure {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 20%;
 }
 
-.main-content figcaption {
-  text-align: center;
+.content-section img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.content-section a {
+  margin-top: 8%;
+  color: blue;
+}
+
+.main figcaption {
   color: gray;
 }
 
-.main-content button {
-  border: 1px solid rgb(228, 217, 217);
-  padding: 5px 10px;
-  border-radius: 3px;
+.sign {
+  border: 1px solid black;
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+}
+
+.sign-in {
+  align-items: center;
+  background-color: #e9ebee;
+}
+
+.footer{
+  padding: 1%;
+  text-align: center;
+  background-color: gray;
 }
